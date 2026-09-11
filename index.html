@@ -102,11 +102,16 @@
         header {
             background: var(--surface);
             color: var(--ink);
-            padding: 1.5rem 2rem 0;
             border-bottom: 1px solid var(--border);
             position: sticky;
             top: 0;
             z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 0;
         }
 
         .eyebrow {
@@ -474,17 +479,19 @@
 </head>
 <body>
     <header>
-        <span class="eyebrow">SISTEMA INTELIGENTE DE FLOTA Y AUDITORÍA DE DATOS</span>
-        <h1>SIFAD <span class="unit">· seed 20260910 · DRL banda B</span></h1>
-        <p>Carrera Ciencias de Datos — Encuentro 1</p>
-        <nav>
-            <button class="nav-btn active" data-section="overview">📈 Overview</button>
-            <button class="nav-btn" data-section="progreso">🕒 Progreso</button>
-            <button class="nav-btn" data-section="datos">📁 Datos Generados</button>
-            <button class="nav-btn" data-section="anomalias">⚠️ Anomalías</button>
-            <button class="nav-btn" data-section="hipotesis">🔬 Hipótesis</button>
-            <button class="nav-btn" data-section="roadmap">📅 Roadmap</button>
-        </nav>
+        <div class="header-inner">
+            <span class="eyebrow">SISTEMA INTELIGENTE DE FLOTA Y AUDITORÍA DE DATOS</span>
+            <h1>SIFAD <span class="unit">· seed 20260910 · DRL banda B</span></h1>
+            <p>Carrera Ciencias de Datos — Encuentro 1</p>
+            <nav>
+                <button class="nav-btn active" data-section="overview">📈 Overview</button>
+                <button class="nav-btn" data-section="progreso">🕒 Progreso</button>
+                <button class="nav-btn" data-section="datos">📁 Datos Generados</button>
+                <button class="nav-btn" data-section="anomalias">⚠️ Anomalías</button>
+                <button class="nav-btn" data-section="hipotesis">🔬 Hipótesis</button>
+                <button class="nav-btn" data-section="roadmap">📅 Roadmap</button>
+            </nav>
+        </div>
     </header>
 
     <div class="container">
